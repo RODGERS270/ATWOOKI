@@ -59,6 +59,7 @@ int main()
     cin >> x2 >> y2;
     z = (x2 + 10) / (3 * y2);
     cout << "z is " << z << endl;
+    cout<<"The value of z rounded to the nearest integer is" << round(z) <<endl;
 
     return 0;
 
