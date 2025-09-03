@@ -1,14 +1,26 @@
 #include <iostream>
 #include <cmath>
 using namespace std;
+double power(double base, int exponent) 
+{
+  double result =1;
+  for(int i=0; i<exponent; i++)
+  {
+    result= result * base;
 
+  }
+  return result;
+  
+}
 int main()
  {
-    
+    double base; int pow_var;
     int number = rand();
     cout << "Random number: " << number << endl;
-
-    
+int exponent;
+cout<<"Enter base and exponent;"<<endl;
+    cin>>base>>exponent;
+    cout<<"result is" << power(base, exponent)<<endl;
     char w = 'P';
     cout << w << endl;
 
@@ -24,7 +36,9 @@ int main()
     cin >> x;
     cout << "Character entered is " << x << endl;
 
-   
+   for (int i=0; i<=5; i++)
+  cout<<i<<endl;
+
     double b, l;
     cout << "Enter two numbers below 10: ";
     cin >> b >> l;
@@ -44,7 +58,7 @@ int main()
     cout << "After swapping: a = " << a << ", b = " << b2 << endl;
 
     
-    const double pi = 3.14;
+   const double pi = 3.14;
     double radius, Area, Circumference;
     cout << "Enter radius of the circle: ";
     cin >> radius;
@@ -62,6 +76,6 @@ int main()
     cout<<"The value of z rounded to the nearest integer is " << round(z) <<endl;
 
     cout<<"Hello World!"<<endl;
-    return 0;
-
+    
 }
+
